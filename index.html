@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+	<link href="schaltwerke.css" rel="stylesheet">	
+    <title>Schaltwerke</title>
+  </head>
+  <body onload="scale()">
+	<meta name="viewport" content="width=device-width, user-scalable=no"/>
+	<table id="main">
+		<tbody>
+			<tr>
+				<th class="titel">
+					<table class="inhalt">
+						<tbody>
+							<tr>
+								<th style="position: relative">
+										<svg viewBox="0 0 100 100" preserveAspectRatio="none" class="d_pfeile_svg">
+											<defs>
+												<marker id="d_pfeilspitze" markerWidth="10" markerHeight="10" refX="1.5" refY="2" orient="auto">
+												  <path d="M 0 4 L 2 2 0 0" class="d_pfeilspitze_path"/>
+												</marker>
+											 </defs>
+											
+											<path d="M 57.8 26 Q 69 29 72.5 40.2" id="pfeil0" class="d_pfeile_schwarz" stroke-linecap="round" marker-end="url(#d_pfeilspitze)"/>
+											<path d="M 73 59.5 Q 69 71 58.5 74" id="pfeil2" class="d_pfeile_schwarz" stroke-linecap="round" marker-end="url(#d_pfeilspitze)"/>
+											<path d="M 27.7 40.5 Q 31 29 41.5 26" id="pfeil4" class="d_pfeile_schwarz" stroke-linecap="round" marker-end="url(#d_pfeilspitze)"/>
+											<path d="M 41.8 74 Q 31 71 28 60" id="pfeil6" class="d_pfeile_schwarz" stroke-linecap="round" marker-end="url(#d_pfeilspitze)"/>
+											
+											<path d="M 69.8 43 Q 61 41 56.5 30.2" id="pfeil1" class="d_pfeile_schwarz" stroke-linecap="round" marker-end="url(#d_pfeilspitze)"/>
+											<path d="M 57 70.5 Q 60 60 69.8 57.4" id="pfeil3" class="d_pfeile_schwarz" stroke-linecap="round" marker-end="url(#d_pfeilspitze)"/>
+											<path d="M 43.2 30 Q 40 40 30.2 42.8" id="pfeil5" class="d_pfeile_schwarz" stroke-linecap="round" marker-end="url(#d_pfeilspitze)"/>
+											<path d="M 30.5 57 Q 39 59.5 43 69.5" id="pfeil7" class="d_pfeile_schwarz" stroke-linecap="round" marker-end="url(#d_pfeilspitze)"/>
+											
+											<path d="M 53 33 Q 58 50 53 66" id="pfeil8" class="d_pfeile_schwarz" stroke-linecap="round" marker-end="url(#d_pfeilspitze)"/>
+											<path d="M 47 66 Q 42 50 47 33.2" id="pfeil9" class="d_pfeile_schwarz" stroke-linecap="round" marker-end="url(#d_pfeilspitze)"/>
+											<path d="M 32 47 Q 50 40 67 47" id="pfeil10" class="d_pfeile_schwarz" stroke-linecap="round" marker-end="url(#d_pfeilspitze)"/>
+											<path d="M 68 53 Q 50 60 32 53" id="pfeil11" class="d_pfeile_schwarz" stroke-linecap="round" marker-end="url(#d_pfeilspitze)"/>
+											
+											<path d="M47 13 C 44 4 56 4 53 13" id="pfeil12" class="d_pfeile_schwarz" stroke-linecap="round" marker-end="url(#d_pfeilspitze)"/>
+											<path d="M53 86.2 C 56 95.2 44 95.2 47 86.2" id="pfeil13" class="d_pfeile_schwarz" stroke-linecap="round" marker-end="url(#d_pfeilspitze)"/>
+											<path d="M83.6 46.5 C 91 43.5 91 56.5 84 53.5" id="pfeil14" class="d_pfeile_schwarz" stroke-linecap="round" marker-end="url(#d_pfeilspitze)"/>
+											<path d="M16 46.5 C 8.6  43.5 8.6  56.5 15.6 53.5" id="pfeil15" class="d_pfeile_schwarz" stroke-linecap="round" marker-end="url(#d_pfeilspitze)"/>
+										</svg>
+										<svg viewBox="0 0 100 100" preserveAspectRatio="none" class="d_pfeile_svg">
+											<path d="M 57.8 26 Q 69 29 72.5 40.2" id="d_gelb_0" class="d_pfeile_gelb" stroke-linecap="round"/>
+											<path d="M 73 59.5 Q 69 71 58.5 74" id="d_gelb_2" class="d_pfeile_gelb" stroke-linecap="round"/>
+											<path d="M 27.7 40.5 Q 31 29 41.5 26" id="d_gelb_4" class="d_pfeile_gelb" stroke-linecap="round"/>
+											<path d="M 41.8 74 Q 31 71 28 60" id="d_gelb_6" class="d_pfeile_gelb" stroke-linecap="round"/>
+											
+											<path d="M 69.8 43 Q 61 41 56.5 30.2" id="d_gelb_1" class="d_pfeile_gelb" stroke-linecap="round"/>
+											<path d="M 57 70.5 Q 60 60 69.8 57.4" id="d_gelb_3" class="d_pfeile_gelb" stroke-linecap="round"/>
+											<path d="M 43.2 30 Q 40 40 30.2 42.8" id="d_gelb_5" class="d_pfeile_gelb" stroke-linecap="round"/>
+											<path d="M 30.5 57 Q 39 59.5 43 69.5" id="d_gelb_7" class="d_pfeile_gelb" stroke-linecap="round"/>
+											
+											<path d="M 53 33 Q 58 50 53 66" id="d_gelb_8" class="d_pfeile_gelb" stroke-linecap="round"/>
+											<path d="M 47 66 Q 42 50 47 33.2" id="d_gelb_9" class="d_pfeile_gelb" stroke-linecap="round"/>
+											<path d="M 32 47 Q 50 40 67 47" id="d_gelb_10" class="d_pfeile_gelb" stroke-linecap="round"/>
+											<path d="M 68 53 Q 50 60 32 53" id="d_gelb_11" class="d_pfeile_gelb" stroke-linecap="round"/>
+											
+											<path d="M47 13 C 44 4 56 4 53 13" id="d_gelb_12" class="d_pfeile_gelb" stroke-linecap="round"/>
+											<path d="M53 86.2 C 56 95.2 44 95.2 47 86.2" id="d_gelb_13" class="d_pfeile_gelb" stroke-linecap="round"/>
+											<path d="M83.6 46.5 C 91 43.5 91 56.5 84 53.5" id="d_gelb_14" class="d_pfeile_gelb" stroke-linecap="round"/>
+											<path d="M16 46.5 C 8.6  43.5 8.6  56.5 15.6 53.5" id="d_gelb_15" class="d_pfeile_gelb" stroke-linecap="round"/>
+										</svg>
+										<div class="d_container">
+											<div class="bpx bpx_normal" onclick="edit_d_v(0,1)" id="bp0">00&nbsp;|&nbsp;1 01&nbsp;|&nbsp;1 10&nbsp;|&nbsp;1 11&nbsp;|&nbsp;1</div>
+											<div class="bpx bpx_normal" onclick="edit_d_v(1,0)" id="bp1">00&nbsp;|&nbsp;1 01&nbsp;|&nbsp;1 10&nbsp;|&nbsp;1 11&nbsp;|&nbsp;1</div>
+											<div class="bpx bpx_normal" onclick="edit_d_v(1,2)" id="bp2">00&nbsp;|&nbsp;1 01&nbsp;|&nbsp;1 10&nbsp;|&nbsp;1 11&nbsp;|&nbsp;1</div>
+											<div class="bpx bpx_normal" onclick="edit_d_v(2,1)" id="bp3">00&nbsp;|&nbsp;1 01&nbsp;|&nbsp;1 10&nbsp;|&nbsp;1 11&nbsp;|&nbsp;1</div>
+											<div class="bpx bpx_normal" onclick="edit_d_v(3,0)" id="bp4">00&nbsp;|&nbsp;1 01&nbsp;|&nbsp;1 10&nbsp;|&nbsp;1 11&nbsp;|&nbsp;1</div>
+											<div class="bpx bpx_normal" onclick="edit_d_v(0,3)" id="bp5">00&nbsp;|&nbsp;1 01&nbsp;|&nbsp;1 10&nbsp;|&nbsp;1 11&nbsp;|&nbsp;1</div>
+											<div class="bpx bpx_normal" onclick="edit_d_v(2,3)" id="bp6">00&nbsp;|&nbsp;1 01&nbsp;|&nbsp;1 10&nbsp;|&nbsp;1 11&nbsp;|&nbsp;1</div>
+											<div class="bpx bpx_normal" onclick="edit_d_v(3,2)" id="bp7">00&nbsp;|&nbsp;1 01&nbsp;|&nbsp;1 10&nbsp;|&nbsp;1 11&nbsp;|&nbsp;1</div>
+											<div class="bpx bpx_mitte" onclick="edit_d_v(0,2)" id="bp8">00&nbsp;|&nbsp;1 01&nbsp;|&nbsp;1 10&nbsp;|&nbsp;1 11&nbsp;|&nbsp;1</div>
+											<div class="bpx bpx_mitte" onclick="edit_d_v(2,0)" id="bp9">00&nbsp;|&nbsp;1 01&nbsp;|&nbsp;1 10&nbsp;|&nbsp;1 11&nbsp;|&nbsp;1</div>
+											<div class="bpx bpx_mitte" onclick="edit_d_v(3,1)" id="bp10">00&nbsp;|&nbsp;1 01&nbsp;|&nbsp;1 10&nbsp;|&nbsp;1 11&nbsp;|&nbsp;1</div>
+											<div class="bpx bpx_mitte" onclick="edit_d_v(1,3)" id="bp11">00&nbsp;|&nbsp;1 01&nbsp;|&nbsp;1 10&nbsp;|&nbsp;1 11&nbsp;|&nbsp;1</div>
+											<div class="bpx bpx_normal" onclick="edit_d_v(0,0)" id="bp12">00&nbsp;|&nbsp;1 01&nbsp;|&nbsp;1 10&nbsp;|&nbsp;1 11&nbsp;|&nbsp;1</div>
+											<div class="bpx bpx_normal" onclick="edit_d_v(2,2)" id="bp13">00&nbsp;|&nbsp;1 01&nbsp;|&nbsp;1 10&nbsp;|&nbsp;1 11&nbsp;|&nbsp;1</div>
+											<div class="bpx bpx_normal" onclick="edit_d_v(1,1)" id="bp14">00&nbsp;|&nbsp;1 01&nbsp;|&nbsp;1 10&nbsp;|&nbsp;1 11&nbsp;|&nbsp;1</div>
+											<div class="bpx bpx_normal" onclick="edit_d_v(3,3)" id="bp15">00&nbsp;|&nbsp;1 01&nbsp;|&nbsp;1 10&nbsp;|&nbsp;1 11&nbsp;|&nbsp;1</div>
+										</div>
+										<div class="d_container">
+											<div class="d_Zx Z0" id="d_Z0" onclick="edit_d(0)">Z0</div>
+											<div class="d_Zx Z1" id="d_Z1" onclick="edit_d(1)">Z1</div>
+											<div class="d_Zx Z2" id="d_Z2" onclick="edit_d(2)">Z2</div>
+											<div class="d_Zx Z3" id="d_Z3" onclick="edit_d(3)">Z3</div>
+										</div>
+										<div class="d_container">
+											<input id="abbrechen" onclick="reload_d()" type="button" value="Abbrechen">
+											<div class="tabelle_d_overlay" id="overlay_0"><p class="overlay_text" id="overlay_0_text">Z0&#10230;Z1</p></div>
+											<div class="tabelle_d_overlay" id="overlay_1"><p class="overlay_text" id="overlay_1_text">Z0&#10230;Z1</p></div>
+											<div class="tabelle_d_overlay" id="overlay_2"><p class="overlay_text" id="overlay_2_text">Z0&#10230;Z1</p></div>
+											<div class="tabelle_d_overlay" id="overlay_3"><p class="overlay_text" id="overlay_3_text">Z0&#10230;Z1</p></div>
+											<table id="tabelle_d">
+												<tbody>
+													<tr>
+														<th colspan="5" id="titel">Titel</th>
+													</tr>
+													<tr>
+														<th class="beschriftung_d border_top_d">E1</th>
+														<th class="th_d border_top_d">0</th>
+														<th class="th_d border_top_d">0</th>
+														<th class="th_d border_top_d">1</th>
+														<th class="th_d border_top_d">1</th>
+													</tr>
+													<tr>
+														<th class="beschriftung_d rahmen_t_d">E0</th>
+														<th class="th_d" id="rahmen_0">0</th>
+														<th class="th_d" id="rahmen_1">1</th>
+														<th class="th_d" id="rahmen_2">0</th>
+														<th class="th_d" id="rahmen_3">1</th>
+													</tr>
+													<tr>
+														<th class="beschriftung_d border_top_d">A</th>
+														<th class="th_d click_green border_top_d" id="A16" onclick="change_a(16)">X</th>
+														<th class="th_d click_green border_top_d" id="A17" onclick="change_a(17)">X</th>
+														<th class="th_d click_green border_top_d" id="A18" onclick="change_a(18)">X</th>
+														<th class="th_d click_green border_top_d" id="A19" onclick="change_a(19)">X</th>
+													</tr>
+													<tr>
+														<th class="beschriftung_d  click_red" onclick="my_clear_d()">Clear</th>
+														<th class="th_d click_red" onclick="my_clear(16)">C</th>
+														<th class="th_d click_red" onclick="my_clear(17)">C</th>
+														<th class="th_d click_red" onclick="my_clear(18)">C</th>
+														<th class="th_d click_red" onclick="my_clear(19)">C</th>
+													</tr>
+													<tr>
+														<th colspan="5" class="th_d tabelle_padding border_top_d">
+														<input class="tabelle_buttons" onclick="reload_d()" type="button" value="Abbrechen">
+														<input class="tabelle_buttons" onclick="edit_d()" type="button" value="OK">
+														</th>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+								</th>
+							</tr>
+						</tbody>
+					</table>
+				</th>
+				<th class="titel">
+					<table class="inhalt">
+						<tbody>
+							<tr>
+								<th style="position: relative">
+									<img class="animation_img" src="./bilder/animation.png">
+									
+									<input class="animation_items" id="reset" type="button" onclick="reset_animation()" value="Reset">
+									<input class="animation_items" id="zeitlupe" type="button" onclick="zeitlupe()" value="Zeitlupe">
+									
+									<div class="animation_items" id="E1" onclick="change_e(1)">0</div>
+									<div class="animation_items" id="E0" onclick="change_e(0)">0</div>
+									<div class="animation_items" id="ausgang">X</div>
+									<div class="animation_items" id="farbez">Z</div>
+									
+									<img class="flanke_img" id="flanke_img_active" onclick="run()" src="./bilder/flanke.png">
+									<img class="flanke_img" id="flanke_img_dummy" src="./bilder/flanke.png">
+									
+									<div class="animation_items_k" id="E1f">0</div>
+									<div class="animation_items_k" id="E0f">0</div>
+									<div class="animation_items_k" id="Q1f">0</div>
+									<div class="animation_items_k" id="Q0f">0</div>
+									<div class="animation_items_k" id="E1g">0</div>
+									<div class="animation_items_k" id="E0g">0</div>
+									<div class="animation_items_k" id="Q1g">0</div>
+									<div class="animation_items_k" id="Q0g">0</div>
+									<div class="animation_items_k" id="Q1z">0</div>
+									<div class="animation_items_k" id="Q0z">0</div>
+									<div class="animation_items_k" id="Af">X</div>
+									<div class="animation_items_k" id="D1g">X</div>
+									<div class="animation_items_k" id="D0g">X</div>
+									<div class="animation_items_k" id="D1z">X</div>
+									<div class="animation_items_k" id="D0z">X</div>
+									
+									<div class="ani_Zx Z0" id="ani_Z0" onclick="change_z_start(0)">Z0</div>
+									<div class="ani_Zx Z1" id="ani_Z1" onclick="change_z_start(1)">Z1</div>
+									<div class="ani_Zx Z2" id="ani_Z2" onclick="change_z_start(2)">Z2</div>
+									<div class="ani_Zx Z3" id="ani_Z3" onclick="change_z_start(3)">Z3</div>
+									
+									<div id="div_takt">
+										<p id="p_takt">1/4&nbsp;&nbsp;&nbsp;Hz<br>1/8&nbsp;&nbsp;&nbsp;Hz</p>
+										<img class="rb_takt" id="takt_0" onclick="change_takt(0)" src="./bilder/radiobutton0.png">
+										<img class="rb_takt" id="takt_1" src="./bilder/radiobutton1.png">
+										<img class="rb_takt" id="takt_2" onclick="change_takt(1)" src="./bilder/radiobutton0.png">
+										<img class="rb_takt" id="takt_3" src="./bilder/radiobutton1.png">
+										<img class="rb_takt" id="takt_4" onclick="change_takt(2)" src="./bilder/radiobutton0.png">
+										<img class="rb_takt" id="takt_5" src="./bilder/radiobutton1.png">
+									</div>
+
+									<svg viewBox="0 0 100 100" preserveAspectRatio="none" id="a_pfeile_gelb_svg">
+									
+										<path d="M 48.3 74 L 37.1 74 37.1 20.9 48.3 20.9" id="gelb_4" class="a_pfeile_gelb" stroke-linecap="butt"/>
+										<path d="M 35 38.4 L 38.8 38.4" class="a_pfeile_grau" stroke-linecap="butt"/>
+										<path d="M 27.7 12.3 L 31.4 12.3 31.4 38.3 48.3 38.3" id="gelb_1" class="a_pfeile_gelb" stroke-linecap="butt"/>
+										<path d="M 27.7 18.6 L 31.4 18.6 31.4 38.3 48.3 38.3" id="gelb_3" class="a_pfeile_gelb" stroke-linecap="butt"/>
+										<path d="M 39.6 51.9 L 39.6 49" class="a_pfeile_grau" stroke-linecap="butt"/>
+									
+										<path d="M 27.7 12.3 L 31.4 12.3 31.4 8.7 48.3 8.7" id="gelb_0" class="a_pfeile_gelb" stroke-linecap="butt"/>
+										//gelb_1
+										<path d="M 27.7 18.6 L 31.4 18.6 31.4 8.7 48.3 8.7" id="gelb_2" class="a_pfeile_gelb" stroke-linecap="butt"/>
+										//gelb_3
+										
+										//gelb_4
+										<path d="M 48.3 74 L 37.1 74 37.1 50.3 48.3 50.3" id="gelb_5" class="a_pfeile_gelb" stroke-linecap="butt"/>
+										
+										<path d="M 70.1 14.8 L 83.8 14.8" class="a_pfeile_gelb" id="gelb_6" stroke-linecap="butt"/>
+										
+										<path d="M 70.1 44.4 L 82.7 44.4 82.7 74.1 70.1 74.1" id="gelb_7" class="a_pfeile_gelb" stroke-linecap="butt"/>
+										
+										<path d="M 55 8.7 65.1 8.7 L 65.1 12.9" id="gelb_8" class="a_pfeile_gelb_klein" stroke-linecap="butt"/>
+										<path d="M 55 21 65.1 21 L 65.1 17" id="gelb_9" class="a_pfeile_gelb_klein" stroke-linecap="butt"/>
+										<path d="M 55 38.3 65.1 38.3 L 65.1 40.5" id="gelb_10" class="a_pfeile_gelb_klein" stroke-linecap="butt"/>
+										<path d="M 55 50.6 65.1 50.6 L 65.1 48.4" id="gelb_11" class="a_pfeile_gelb_klein" stroke-linecap="butt"/>
+										<path d="M 63.4 74 L 55 74" id="gelb_12" class="a_pfeile_gelb_klein" stroke-linecap="butt"/>-->
+										
+										<path d="M 20.6 91.3 L 51.5 91.3" id="takt" stroke-linecap="butt"/>
+									</svg>
+								</th>
+							</tr>
+						</tbody>
+					</table>
+				</th>
+			</tr>
+			<tr>
+				<th class="titel" colspan="3">
+					<table class="wt_inhalt">
+						<tbody>
+							<tr>
+								<th class="wt_beschriftung">Eingang 1</th>
+								<th class="wt_grenzen_weich" id="E1_0">0</th>
+								<th class="wt_grenzen_weich" id="E1_1">0</th>
+								<th class="wt_grenzen_weich" id="E1_2">1</th>
+								<th class="wt_grenzen_hart" id="E1_3">1</th>
+								<th class="wt_grenzen_weich" id="E1_4">0</th>
+								<th class="wt_grenzen_weich" id="E1_5">0</th>
+								<th class="wt_grenzen_weich" id="E1_6">1</th>
+								<th class="wt_grenzen_hart" id="E1_7">1</th>
+								<th class="wt_grenzen_weich" id="E1_8">0</th>
+								<th class="wt_grenzen_weich" id="E1_9">0</th>
+								<th class="wt_grenzen_weich" id="E1_10">1</th>
+								<th class="wt_grenzen_hart" id="E1_11">1</th>
+								<th class="wt_grenzen_weich" id="E1_12">0</th>
+								<th class="wt_grenzen_weich" id="E1_13">0</th>
+								<th class="wt_grenzen_weich" id="E1_14">1</th>
+								<th id="E1_15">1</th>
+							</tr>
+							<tr>
+								<th class="wt_beschriftung">Eingang 0</th>
+								<th class="wt_grenzen_weich" id="E0_0">0</th>
+								<th class="wt_grenzen_weich" id="E0_1">1</th>
+								<th class="wt_grenzen_weich" id="E0_2">0</th>
+								<th class="wt_grenzen_hart" id="E0_3">1</th>
+								<th class="wt_grenzen_weich" id="E0_4">0</th>
+								<th class="wt_grenzen_weich" id="E0_5">1</th>
+								<th class="wt_grenzen_weich" id="E0_6">0</th>
+								<th class="wt_grenzen_hart" id="E0_7">1</th>
+								<th class="wt_grenzen_weich" id="E0_8">0</th>
+								<th class="wt_grenzen_weich" id="E0_9">1</th>
+								<th class="wt_grenzen_weich" id="E0_10">0</th>
+								<th class="wt_grenzen_hart" id="E0_11">1</th>
+								<th class="wt_grenzen_weich" id="E0_12">0</th>
+								<th class="wt_grenzen_weich" id="E0_13">1</th>
+								<th class="wt_grenzen_weich" id="E0_14">0</th>
+								<th id="E0_15">1</th>
+							</tr>
+							<tr>
+								<th  class="wt_beschriftung">Ausgangszustand</th>
+								<th class="wt_grenzen_weich Z0" id="AZ_0">Z0</th>
+								<th class="wt_grenzen_weich Z0" id="AZ_1">Z0</th>
+								<th class="wt_grenzen_weich Z0" id="AZ_2">Z0</th>
+								<th class="wt_grenzen_hart Z0" id="AZ_3">Z0</th>
+								<th class="wt_grenzen_weich Z1" id="AZ_4">Z1</th>
+								<th class="wt_grenzen_weich Z1" id="AZ_5">Z1</th>
+								<th class="wt_grenzen_weich Z1" id="AZ_6">Z1</th>
+								<th class="wt_grenzen_hart Z1" id="AZ_7">Z1</th>
+								<th class="wt_grenzen_weich Z2" id="AZ_8">Z2</th>
+								<th class="wt_grenzen_weich Z2" id="AZ_9">Z2</th>
+								<th class="wt_grenzen_weich Z2" id="AZ_10">Z2</th>
+								<th class="wt_grenzen_hart Z2" id="AZ_11">Z2</th>
+								<th class="wt_grenzen_weich Z3" id="AZ_12">Z3</th>
+								<th class="wt_grenzen_weich Z3" id="AZ_13">Z3</th>
+								<th class="wt_grenzen_weich Z3" id="AZ_14">Z3</th>
+								<th class="Z3" id="AZ_15">Z3</th>
+							</tr>
+							
+							<tr class="hr">
+							</tr>
+							
+							<tr>
+								<th class="wt_beschriftung border_top_wt">Folgezustand</th>
+								<th class="wt_grenzen_weich_var click_green border_top_wt" id="F0" onclick="change_f(0)">X</th>
+								<th class="wt_grenzen_weich_var click_green border_top_wt" id="F1" onclick="change_f(1)">X</th>
+								<th class="wt_grenzen_weich_var click_green border_top_wt" id="F2" onclick="change_f(2)">X</th>
+								<th class="wt_grenzen_hart_var click_green border_top_wt" id="F3" onclick="change_f(3)">X</th>
+								<th class="wt_grenzen_weich_var click_green border_top_wt" id="F4" onclick="change_f(4)">X</th>
+								<th class="wt_grenzen_weich_var click_green border_top_wt" id="F5" onclick="change_f(5)">X</th>
+								<th class="wt_grenzen_weich_var click_green border_top_wt" id="F6" onclick="change_f(6)">X</th>
+								<th class="wt_grenzen_hart_var click_green border_top_wt" id="F7" onclick="change_f(7)">X</th>
+								<th class="wt_grenzen_weich_var click_green border_top_wt" id="F8" onclick="change_f(8)">X</th>
+								<th class="wt_grenzen_weich_var click_green border_top_wt" id="F9" onclick="change_f(9)">X</th>
+								<th class="wt_grenzen_weich_var click_green border_top_wt" id="F10" onclick="change_f(10)">X</th>
+								<th class="wt_grenzen_hart_var click_green border_top_wt" id="F11" onclick="change_f(11)">X</th>
+								<th class="wt_grenzen_weich_var click_green border_top_wt" id="F12" onclick="change_f(12)">X</th>
+								<th class="wt_grenzen_weich_var click_green border_top_wt" id="F13" onclick="change_f(13)">X</th>
+								<th class="wt_grenzen_weich_var click_green border_top_wt" id="F14" onclick="change_f(14)">X</th>
+								<th class="wt_grenzen_weich_var click_green border_top_wt" id="F15" onclick="change_f(15)">X</th>
+							</tr>
+							<tr>
+								<th class="wt_beschriftung">Ausgang</th>
+								<th class="wt_grenzen_weich_var click_green" id="A0" onclick="change_a(0)">X</th>
+								<th class="wt_grenzen_weich_var click_green" id="A1" onclick="change_a(1)">X</th>
+								<th class="wt_grenzen_weich_var click_green" id="A2" onclick="change_a(2)">X</th>
+								<th class="wt_grenzen_hart_var click_green" id="A3" onclick="change_a(3)">X</th>
+								<th class="wt_grenzen_weich_var click_green" id="A4" onclick="change_a(4)">X</th>
+								<th class="wt_grenzen_weich_var click_green" id="A5" onclick="change_a(5)">X</th>
+								<th class="wt_grenzen_weich_var click_green" id="A6" onclick="change_a(6)">X</th>
+								<th class="wt_grenzen_hart_var click_green" id="A7" onclick="change_a(7)">X</th>
+								<th class="wt_grenzen_weich_var click_green" id="A8" onclick="change_a(8)">X</th>
+								<th class="wt_grenzen_weich_var click_green" id="A9" onclick="change_a(9)">X</th>
+								<th class="wt_grenzen_weich_var click_green" id="A10" onclick="change_a(10)">X</th>
+								<th class="wt_grenzen_hart_var click_green" id="A11" onclick="change_a(11)">X</th>
+								<th class="wt_grenzen_weich_var click_green" id="A12" onclick="change_a(12)">X</th>
+								<th class="wt_grenzen_weich_var click_green" id="A13" onclick="change_a(13)">X</th>
+								<th class="wt_grenzen_weich_var click_green" id="A14" onclick="change_a(14)">X</th>
+								<th class="wt_grenzen_weich_var click_green" id="A15" onclick="change_a(15)">X</th>
+							</tr>
+							<tr>
+								<th class="wt_beschriftung click_red" onclick="my_clear_all();">Clear</th>
+								<th class="wt_grenzen_weich_var click_red" onclick="my_clear(0);">C</th>
+								<th class="wt_grenzen_weich_var click_red" onclick="my_clear(1);">C</th>
+								<th class="wt_grenzen_weich_var click_red" onclick="my_clear(2);">C</th>
+								<th class="wt_grenzen_hart_var click_red" onclick="my_clear(3);">C</th>
+								<th class="wt_grenzen_weich_var click_red" onclick="my_clear(4);">C</th>
+								<th class="wt_grenzen_weich_var click_red" onclick="my_clear(5);">C</th>
+								<th class="wt_grenzen_weich_var click_red" onclick="my_clear(6);">C</th>
+								<th class="wt_grenzen_hart_var click_red" onclick="my_clear(7);">C</th>
+								<th class="wt_grenzen_weich_var click_red" onclick="my_clear(8);">C</th>
+								<th class="wt_grenzen_weich_var click_red" onclick="my_clear(9);">C</th>
+								<th class="wt_grenzen_weich_var click_red" onclick="my_clear(10);">C</th>
+								<th class="wt_grenzen_hart_var click_red" onclick="my_clear(11);">C</th>
+								<th class="wt_grenzen_weich_var click_red" onclick="my_clear(12);">C</th>
+								<th class="wt_grenzen_weich_var click_red" onclick="my_clear(13);">C</th>
+								<th class="wt_grenzen_weich_var click_red" onclick="my_clear(14);">C</th>
+								<th class="click_red" onclick="my_clear(15);">C</th>
+							</tr>
+						</tbody>
+					</table>
+					<div id="active_z_overlay"></div>
+					<img id="wt_pfeil" src="./bilder/wt_pfeil.png">
+				</th>
+			</tr>
+			<tr>
+				<th>
+					<div>
+						<img class="checkbox_scale" id="scale_1" onclick="change_scale(0)" src="./bilder/checkbox1.png">
+						<img class="checkbox_scale" id="scale_0" onclick="change_scale(1)" src="./bilder/checkbox0.png">
+						<p class="scale_text">An Fenster anpassen</p>
+					</div>
+				</th>
+				<th>
+					<p class="impressum">Original: <a id="Andreas" class="click_blue" onclick="Andreas();">Andreas Wagner</a> | HTML: <a id="Gernot" class="click_blue" onclick="Gernot();">Gernot Polivka</a> | Jahr: 2020</p>
+				</th>
+			</tr>
+		</tbody>
+	</table>
+
+	
+	<script src="schaltwerke.js"></script>
+  </body>
+</html>
